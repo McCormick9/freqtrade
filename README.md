@@ -59,7 +59,8 @@ git clone https://github.com/MontrealTradingGroup/freqtrade.git
 cd freqtrade
 sudo apt-get install make build-essential python3-dev
 git checkout develop
-./setup.sh --install
+# If the following step does not work, then edit the setup.sh file to have your version of Python included. 
+./setup.sh --install 
 source .env/bin/activate
 python3.6 ./freqtrade/main.py -c config.json
 ```
